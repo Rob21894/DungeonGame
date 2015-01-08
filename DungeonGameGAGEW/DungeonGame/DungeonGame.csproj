@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82EF09B3-8F68-4D31-A592-2C5D3BA574FE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DungeonGame</RootNamespace>
+    <AssemblyName>DungeonGame</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blocked.cs" />
+    <Compile Include="BlockedDown.cs" />
+    <Compile Include="BlockedLeftJunction.cs" />
+    <Compile Include="BlockedRightJunction.cs" />
+    <Compile Include="BRJunction.cs" />
+    <Compile Include="Crossroad4.cs" />
+    <Compile Include="Game Complete.cs" />
+    <Compile Include="Trapcrossroad1.cs" />
+    <Compile Include="Crossroad2.cs" />
+    <Compile Include="Dead.cs" />
+    <Compile Include="DownJunction1.cs" />
+    <Compile Include="DownJunction2.cs" />
+    <Compile Include="Downjunction3.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="LeftJunction.cs" />
+    <Compile Include="RightJunction1.cs" />
+    <Compile Include="RightJunction2.cs" />
+    <Compile Include="Trap.cs" />
+    <Compile Include="Trapcrossroad2.cs" />
+    <Compile Include="Trapcrossroad3.cs" />
+    <Compile Include="Trapcrossroad4.cs" />
+    <Compile Include="URJunction.cs" />
+    <Compile Include="ULJunction.cs" />
+    <Compile Include="Crossroad1.cs" />
+    <Compile Include="NumbGenerator.cs" />
+    <Compile Include="UpJunction.cs" />
+    <Compile Include="Design.cs" />
+    <Compile Include="BLJunction.cs" />
+    <Compile Include="MainMenu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
